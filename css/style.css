@@ -25,6 +25,9 @@ body {
 .mesh-light-steel-blue {
   background: url(img/mesh-red.png);
 }
+.mesh-turquoise {
+  background: url(img/mesh-turquoise.png);
+}
 
 /********* HEADER *********/
 header {
@@ -34,20 +37,6 @@ header {
   background-color: white;
   border: none;
 }
-#header-nav h1 { /*** TITULO DE LA PAGINA ***/
-  font-size: 1.5em;
-  color: #4682B4;
-}
-#header-nav h1:hover {
-  color: #B0C4DE;
-}
-#header-nav p {
-  font-size: 1.1em;
-}
-#header-nav a:hover {
-  text-decoration: none;
-}
-
 #logo { /*** UBICACION TITULO DE LA PAGINA ***/
   height: 135px;
   margin-left: 35px;
@@ -55,7 +44,28 @@ header {
   position: relative;
   z-index: 1000;
 }
-
+#logo h1 { /*** TITULO DE LA PAGINA ***/
+  font-size: 1.5em;
+  color: #4682B4;
+}
+#logo h1:hover {
+  color: #5F9EA0;
+}
+#logo h1:active {
+  color: #B0C4DE;
+}
+#logo p {
+  font-size: 1.1em;
+}
+#logo a {
+  text-decoration: none;
+}
+#logo a:hover {
+  text-decoration: none;
+}
+#logo a:visited {
+  text-decoration: none;
+}
 #logo-img {
   margin-left: 40px;
   box-shadow: 15px 15px lightgrey;
@@ -81,6 +91,9 @@ header {
   background: white;
   padding: 5px 20px;
   z-index: 1;
+}
+#nav-list li:active a{
+  background: url(mesh-black);
 }
 #nav-list::after {
   content: " ";
@@ -118,6 +131,7 @@ main {
 }
 #bg-wrapper a {
   color: inherit;
+  text-decoration: underline;
 }
 #bg-wrapper a:hover {
   text-decoration: none;
@@ -128,25 +142,27 @@ main {
 #bg-wrapper section a {
   position: relative;
 }
-#show {
+
+#front {
+  position: relative;
+  z-index: 1;
+  transition: opacity 500ms ease-in-out;
+}
+#back {
   opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 0;
-  transition: opacity 500ms linear;
-}
-#tag {
-  position: relative;
-  z-index: 1;
-  transition: opacity 500ms linear;
+  transition: opacity 500ms ease-in-out;
 }
 
-#bg-wrapper section a:hover > #tag{
+#bg-wrapper section a:hover > #front{
     opacity: 0;
 }
 
-#bg-wrapper section a:hover > #show {
+#bg-wrapper section a:hover > #back {
     opacity: 1;
 }
 
@@ -175,30 +191,23 @@ main {
   padding-left: 20px;
 }
 /********* COLUMNAS *********/
-#col-2k15 {
+#col-2k16 {
   padding: 0px;
   padding-right: 15px;
 }
-#col-2k16 {
+#col-2k15 {
   padding: 0px;
   padding-left: 15px;
-}
-#upcoming {
-  padding: 0px;
 }
 #aside {
   padding: 0px 15px;
 }
-#autores .thumbnail {
-  margin-top: 0px;
-  margin-right: 10px;
-  height: 85px;
+#aside #autores h3 {
+  margin: 10px;
+  padding-left: 25px;
 }
 #autores #bg-wrapper section {
-  margin: 10px 0px;
-}
-#autores img {
-  border-radius: 50px;
+  margin: 5px 10px;
 }
 #tuti {
   color: #FF4500;
@@ -212,6 +221,18 @@ main {
 #minijor {
   color: #FF69B4;
 }
+#mauro {
+  color: #9370DB;
+}
+#fradi {
+  color: #05BBC9;
+}
+#luki {
+  color: #1E90FF;
+}
+#upcoming {
+  padding: 0px;
+}
 #plaquetas section {
   margin-top: 15px;
 }
@@ -221,7 +242,10 @@ main {
 #plaquetas img {
   margin-right: 10px;
 }
-#mailto {
+#contact {
+  padding: 5px 15px;
+}
+#mailto a {
   padding-left: 20px;
   text-decoration: none;
   font-style: italic;
@@ -285,10 +309,10 @@ footer > .container {
 }
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .box.mesh-light-steel-blue { /*LIBRERIAS*/
+  .box.mesh-turquoise { /*LIBRERIAS*/
     height: 620px;
   }
-  .box.mesh-light-steel-blue #bg-wrapper { /*LIBRERIAS*/
+  .box.mesh-turquoise #bg-wrapper { /*LIBRERIAS*/
     height: 600px;
   }
 }
@@ -304,12 +328,23 @@ footer > .container {
   .box.mesh-light-steel-blue #bg-wrapper { /*LIBRERIAS*/
     height: 600px;
   }
+  #plaquetas section a img {
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   #nav-list {
     margin-top: 15px;
+  }
+  .box.mesh-light-steel-blue { /*LIBRERIAS*/
+    height: 620px;
+  }
+  .box.mesh-light-steel-blue #bg-wrapper { /*LIBRERIAS*/
+    height: 600px;
   }
 }
 
@@ -364,6 +399,9 @@ footer > .container {
     padding: 0px;
   }
   #aside {
+    padding: 0px;
+  }
+  #contact {
     padding: 0px;
   }
   /* LIBRERIAS.HTML */
