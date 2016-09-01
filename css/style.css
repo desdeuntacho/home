@@ -22,6 +22,9 @@ body {
   background: url(img/mesh-red.png);
   padding: 10px;
 }
+.mesh-light-steel-blue {
+  background: url(img/mesh-red.png);
+}
 
 /********* HEADER *********/
 header {
@@ -116,6 +119,39 @@ main {
 #bg-wrapper a {
   color: inherit;
 }
+#bg-wrapper a:hover {
+  text-decoration: none;
+}
+#bg-wrapper a:visited {
+  text-decoration: none;
+}
+#bg-wrapper section a {
+  position: relative;
+}
+#show {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: opacity 500ms linear;
+}
+#tag {
+  position: relative;
+  z-index: 1;
+  transition: opacity 500ms linear;
+}
+
+#bg-wrapper section a:hover > #tag{
+    opacity: 0;
+}
+
+#bg-wrapper section a:hover > #show {
+    opacity: 1;
+}
+
+
+
 #bg-wrapper > h3 { /* TITULOS COLUMNAS */
   margin-top: 5px;
   margin-bottom: 5px;
@@ -214,13 +250,46 @@ footer > .container {
 /********** ABOUT.HTML **********/
 #about {
   letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+#about h3 {
+  font-size: 1.2em;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+#about p {
+  text-indent: 50px;
+  margin-bottom: 35px;
 }
 #about h2 {
   font-size: 1.4em;
+  margin-top: 35px;
   margin-bottom: 20px;
 }
-
-
+#librerias h2 {
+  font-size: 1.4em;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+#librerias h3 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+.box.mesh-light-steel-blue {
+  height: 620px;
+}
+.box.mesh-light-steel-blue #bg-wrapper {
+  height: 600px;
+}
+#about ul {
+  padding-left: 20px;
+  list-style: none;
+}
+#about ul li {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  font-size: 0.9em;
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 
