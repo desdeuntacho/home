@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Desde un tacho Ediciones</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -67,17 +68,17 @@
       <div class="container">
         <div id="main-col" class="col-xs-12 col-md-8">
           <img id="jumbo" src="img/cover.jpg" alt="Cover" class="img-responsive">
-          <div id="cuadernos" class="col-xs-12 col-sm-6 col-md-6">
+          <div id="col-2k15" class="col-xs-12 col-sm-6 col-md-6">
             <div class="box mesh-black">
               <div id="bg-wrapper">
-                <h3>Cuadernos</h3>
+                <h3>2015</h3>
                 <section>
                   <a href="#" class="thumbnail">
                     <img src="img/cuaderno1.jpg" alt="Thumbs">
                   </a>
                   <h4>Cómo me convertí en robot</h4>
                   <h5>David Nahón</h5>
-                  <p>Primera edición<br>Verano 2016<br>48 páginas</p>
+                  <p>Primera edición<br>Verano 2015<br>48 páginas</p>
                 </section>
                 <section>
                   <a href="#" class="thumbnail">
@@ -90,10 +91,10 @@
               </div>
             </div> <!-- .BOX -->
           </div>
-          <div id="plaquetas" class="col-xs-12 col-sm-6 col-md-6">
+          <div id="col-2k16" class="col-xs-12 col-sm-6 col-md-6">
             <div class="box mesh-black">
               <div id="bg-wrapper">
-                <h3>Plaquetas</h3>
+                <h3>2016</h3>
                 <section>
                   <a href="#" class="thumbnail">
                     <img src="img/cuaderno3.jpg" alt="Thumbs">
@@ -113,46 +114,88 @@
               </div>
             </div> <!-- .BOX -->
           </div>
+          <div id="upcoming" class="col-xs-12 hidden-xs">
+              <div class="box mesh-black">
+                <div id="bg-wrapper">
+                  <h3>De próxima aparición</h3>
+                </div>
+              </div>
+          </div>
         </div>
-        <div id="autores" class="col-xs-12 col-md-4"> <!-- BARRA LATERAL -->
-          <div class="box mesh-black">
+        <div id="aside" class="col-xs-12 col-md-4"> <!-- BARRA LATERAL -->
+          <div id="autores" class="box mesh-black hidden-xs hidden-sm">
             <div id="bg-wrapper">
               <h3>Autores</h3>
               <section id="antolin">
-                <a href="#" class="thumbnail pull-left">
-                  <img src="http://placecorgi.com/75/75/" alt="Thumbs">
+                <a href="anto.html" class="thumbnail pull-left">
+                  <img src="img/auth.jpg" alt="Thumbs">
                 </a>
                 <h5>Antolín</h5>
-                <p class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="clearfix"><a href="anto.html">Amigo de los Mutantes</a></p>
               </section>
               <section id="tuti">
-                <a href="#" class="thumbnail pull-left">
-                  <img src="http://placecorgi.com/75/75/" alt="Thumbs">
+                <a href="tuti.html" class="thumbnail pull-left">
+                  <img src="img/auth.jpg" alt="Thumbs">
                 </a>
                 <h5>Tuti Curani</h5>
-                <p class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="clearfix"><a href="tuti.html">La promesa del verano intacta</a></p>
               </section>
               <section id="minijor">
-                <a href="#" class="thumbnail pull-left">
-                  <img src="http://placecorgi.com/75/75/" alt="Thumbs">
+                <a href="minijor.html" class="thumbnail pull-left">
+                  <img src="img/auth.jpg" alt="Thumbs">
                 </a>
                 <h5>Mini Jorgelina</h5>
-                <p class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="clearfix"><a href="minijor.html">Rosita</a></p>
               </section>
               <section id="nahon">
-                <a href="#" class="thumbnail pull-left">
-                  <img src="http://placecorgi.com/75/75/" alt="Thumbs">
+                <a href="david.html" class="thumbnail pull-left">
+                  <img src="img/auth.jpg" alt="Thumbs">
                 </a>
                 <h5>David Nahón</h5>
-                <p class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="clearfix"><a href="david.html">Cómo me convertí en robot</a></p>
               </section>
               <section >
-                <a href="#" class="thumbnail pull-left">
-                  <img src="http://placecorgi.com/75/75/" alt="Thumbs">
+                <a href="fradi.html" class="thumbnail pull-left">
+                  <img src="img/auth.jpg" alt="Thumbs">
                 </a>
                 <h5>Fradi</h5>
-                <p class="clearfix">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="clearfix"><a href="fradi.html">Aferrarse al impulso<br>El afecto de la contradicción</a></p>
               </section>
+            </div>
+          </div>
+          <div id="plaquetas" class="box mesh-black">
+            <div id="bg-wrapper">
+              <h3>Plaquetas</h3>
+              <section>
+                <a href="#" class="img-responsive pull-left">
+                  <img src="img/plaq2-s.jpg" alt="Thumbs">
+                </a>
+                <h4>Aferrarse al impulso</h4>
+                <h5>Fradi</h5>
+                <p class="clearfix">Primera edición<br>Verano 2015<br>32 páginas</p>
+              </section>
+              <section>
+                <a href="#" class="img-responsive pull-left">
+                  <img src="img/plaq1-s.jpg" alt="Thumbs">
+                </a>
+                <h4>El afecto de la contradicción</h4>
+                <h5>Fradi</h5>
+                <p class="clearfix">Primera edición<br>Invierno 2015<br>40 páginas</p>
+              </section>
+              <section class="hidden">
+                <a href="#" class="thumbnail pull-left">
+                  <img src="img/plaq3-s.jpg" alt="Thumbs">
+                </a>
+                <h4>Poemas cortos</h4>
+                <h5>Mauro Moschini</h5>
+                <p class="clearfix">Primera edición<br>Invierno 2015<br>36 páginas</p>
+              </section>
+            </div>
+          </div>
+          <div class="box mesh-red">
+            <div id="bg-wrapper">
+              <h3>Sugerencias y comentarios</h3>
+              <p id="mailto"><a href="mailto:desdeuntacho@gmail.com">desdeuntacho@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -160,13 +203,12 @@
     </main>
     <footer class="panel-footer">
       <div class="container">
-        <ul id="ending"class="nav navbar-nav pull-left">
-          <li role="presentation"><a href="">Colecciones</a></li>
-          <li role="presentation"><a href="">Colecciones</a></li>
-          <li role="presentation"><a href="">Colecciones</a></li>
-          <li role="presentation"><a href="">Colecciones</a></li>
-          <p class="navbar-text">&copy 2016 Desde un tacho Ediciones </p>
+        <ul id="ending" class="nav navbar-nav navbar-left">
+          <li role="presentation"><a href=""><span class="glyphicon glyphicon-book"></span> Colecciones</a></li>
+          <li role="presentation"><a href=""><span class="glyphicon glyphicon-tag"></span> Librerías</a></li>
+          <li role="presentation"><a href=""><span class="glyphicon glyphicon-briefcase"></span> Prensa</a></li>
         </ul>
+        <p id="copy" class="navbar-text navbar-right">&copy 2016 Desde un tacho Ediciones</p>
       </div><!-- .container -->
     </footer>
     <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
