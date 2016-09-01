@@ -1,0 +1,251 @@
+* {
+  outline: 0px solid cyan;
+}
+
+body {
+  font-size: 16px;
+  background-color: white;
+  color: #333333;
+  font-family: Times;
+}
+
+.mesh-black {
+  background: url(img/mesh-black.png);
+  padding: 10px;
+}
+.mesh-blue {
+  background: url(img/mesh-blue.png);
+  padding: 10px;
+}
+.mesh-red {
+  background: url(img/mesh-red.png);
+  padding: 10px;
+}
+
+/********* HEADER *********/
+header {
+  margin-top: 20px;
+}
+#header-nav {
+  background-color: white;
+  border: none;
+}
+#header-nav h1 {
+  font-size: 1.5em;
+}
+#header-nav p {
+  font-size: 1.1em;
+}
+#header-nav a:hover {
+  text-decoration: none;
+}
+
+#logo { /*** TITULO DE LA PAGINA ***/
+  height: 135px;
+  margin-left: 40px;
+  padding: 15px 0px;
+  position: relative;
+  z-index: 1000;
+}
+#logo-img {
+  margin-left: 40px;
+  box-shadow: 15px 15px lightgrey;
+  cursor: pointer;
+  position: relative;
+  z-index: 1000;
+  transition: opacity 300ms linear;
+}
+#logo-img:hover {
+  opacity: 0.7;
+}
+#collapsable-nav {
+  position: relative;
+  z-index: 0;
+}
+#nav-list { /*** LISTA BOTONES ***/
+  margin-top: 35px;
+  margin-right: 0px;
+  border: 1px solid #4d4d4d;
+  position: relative;
+}
+#nav-list li a {
+  background: white;
+  padding: 5px 20px;
+  z-index: 1;
+}
+#nav-list::after {
+  content: " ";
+  position: absolute;
+  width: 552px;
+  height: 32px;
+  background: url(img/mesh-black.png);
+  top: 6px;
+  left: 6px;
+  z-index: -1;
+}
+.navbar-header button {
+  margin-top: 45px;
+  margin-right: 30px;
+}
+
+/********* MAIN *********/
+main {
+  margin: 15px 0px;
+}
+#jumbo {
+  margin-bottom: 20px;
+}
+.box {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.box a {
+  border: none;
+}
+#bg-wrapper {
+  background-color: white;
+  padding: 10px;
+}
+#bg-wrapper > h3 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.2em;
+  padding: 15px 10px;
+}
+#bg-wrapper section {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+#bg-wrapper section > h4 {
+  font-weight: bold;
+  padding-left: 20px;
+}
+#bg-wrapper section > h5 {
+  font-size: 1.1em;
+  padding-left: 20px;
+}
+#bg-wrapper section > p {
+  font-size: 1em;
+  padding-left: 20px;
+}
+/********* COLUMNAS *********/
+#cuadernos {
+  padding: 0px 10px;
+}
+#plaquetas {
+  padding: 0px 10px;
+}
+#autores {
+  padding: 0px 10px;
+}
+#autores .thumbnail {
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 140px;
+}
+#autores img {
+  border-radius: 50px;
+}
+#autores h5 {
+  font-size: 1.1em;
+}
+#tuti {
+  color: #FF4500;
+}
+#nahon {
+  color: #8B0000;
+}
+#antolin {
+  color: #228B22;
+}
+#minijor {
+  color: #BA55D3;
+}
+/********* FOOTER *********/
+footer {
+  background: url(img/mesh-blue.png)
+}
+footer > .container {
+  background-color: white;
+}
+#ending p {
+  font-size: 0.9em;
+  float: right;
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Collapsed nav menu */
+  #nav-list {
+    margin: 0px;
+    margin-right: 15px;
+    width: 220px;
+    float: right;
+    border: none;
+  }
+  #collapsable-nav {
+    border: none;
+  }
+  #collapsable-nav a {
+    font-size: 1.2em;
+    text-align: right;
+    border-bottom: 1px dashed #333333;
+  }
+  #collapsable-nav li a {
+    padding: 10px;
+  }
+  #collapsable-nav a span {
+    font-size: 1em;
+    margin-left: 10px;
+    float: right;
+  }
+  #nav-list::after {
+    content: none;
+  }
+  /* LOGO BRAND TITLE */
+  #logo h1 {
+    font-size: 2em;
+  }
+  #logo p {
+    font-size: 1.2em;
+  }
+  /* MAIN */
+  #main-col {
+    padding: 0px;
+  }
+  #bg-wrapper {
+    font-size: 1.1em;
+  }
+  #cuadernos {
+    padding: 0px;
+  }
+  #plaquetas {
+    padding: 0px;
+  }
+  #autores {
+    padding: 0px;
+  }
+}
+
+
+/********** ABOUT **********/
+#about {
+  letter-spacing: 1px;
+}
