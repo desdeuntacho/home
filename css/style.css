@@ -307,6 +307,27 @@ footer > .container {
   margin: 10px 0px;
   font-size: 0.9em;
 }
+
+
+#carroza {
+  height: 412px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .box.mesh-turquoise { /*LIBRERIAS*/
