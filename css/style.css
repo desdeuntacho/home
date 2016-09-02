@@ -9,7 +9,6 @@ body {
   font-family: 'Lora';
   line-height: 1.5;
 }
-
 .mesh-black {
   background: url(img/mesh-black.png);
   padding: 10px;
@@ -25,6 +24,9 @@ body {
 .mesh-turquoise {
   background: url(img/mesh-turquoise.png);
 }
+.mesh-pink {
+  background: url(img/mesh-pink.png);
+}
 
 /********* HEADER *********/
 header {
@@ -35,16 +37,17 @@ header {
   background-color: #ffffff;
   border: none;
 }
-#logo { /*** UBICACION TITULO DE LA PAGINA ***/
-  height: 135px;
+#logo { /*** CONTENEDOR TITULO DE LA PAGINA ***/
+  height: 120px;
   margin-left: 35px;
-  padding: 15px 0px;
+  padding-top: 15px;
   position: relative;
   z-index: 1000;
 }
 #logo h1 { /*** TITULO DE LA PAGINA ***/
   font-size: 1.5em;
   color: #4682B4;
+  transition: color 200ms linear;
 }
 #logo h1:hover {
   color: #5F9EA0;
@@ -54,12 +57,7 @@ header {
 }
 #logo p {
   font-size: 1.1em;
-}
-#logo:hover a {
-  text-decoration: none;
-}
-#logo:visited a {
-  text-decoration: none;
+  margin-bottom: 0px;
 }
 #logo-img {
   margin-left: 40px;
@@ -77,7 +75,7 @@ header {
   z-index: 0;
 }
 #nav-list { /*** LISTA BOTONES ***/
-  margin-top: 35px;
+  margin-top: 50px;
   margin-right: 7px;
   border: 1px solid #4d4d4d;
   position: relative;
@@ -331,8 +329,11 @@ footer {
 }
 .box.mesh-turquoise {
   margin-bottom: 0px;
+  height: 620px;
 }
-
+.box.mesh-turquoise #bg-wrapper { /*LIBRERIAS*/
+  height: 600px;
+}
 
 
 
@@ -340,24 +341,13 @@ footer {
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-  .box.mesh-turquoise { /*LIBRERIAS*/
-    height: 620px;
-  }
-  .box.mesh-turquoise #bg-wrapper { /*LIBRERIAS*/
-    height: 600px;
-  }
+
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   #nav-list {
     margin-top: 0px;
-  }
-  .box.mesh-light-steel-blue { /*LIBRERIAS*/
-    height: 620px;
-  }
-  .box.mesh-light-steel-blue #bg-wrapper { /*LIBRERIAS*/
-    height: 600px;
   }
   #plaquetas section a img {
     height: 150px;
@@ -368,6 +358,9 @@ footer {
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
+  #logo-img {
+    margin-bottom: 20px;
+  }
   #nav-list {
     margin-top: 15px;
   }
@@ -435,5 +428,11 @@ footer {
   /* LIBRERIAS.HTML */
   #about ul li {
     letter-spacing: normal;
+  }
+  .box.mesh-turquoise {
+    height: unset;
+  }
+  .box.mesh-turquoise #bg-wrapper {
+    height: unset;
   }
 }
