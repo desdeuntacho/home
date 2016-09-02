@@ -1,10 +1,10 @@
 * {
-  outline: 0px solid cyan;
+  outline: 0px solid lightsteelblue;
 }
 
 body {
   font-size: 16px;
-  background-color: white;
+  background-color: #ffffff;
   color: #333333;
   font-family: 'Lora';
   line-height: 1.5;
@@ -22,19 +22,17 @@ body {
   background: url(img/mesh-red.png);
   padding: 10px;
 }
-.mesh-light-steel-blue {
-  background: url(img/mesh-red.png);
-}
 .mesh-turquoise {
   background: url(img/mesh-turquoise.png);
 }
 
 /********* HEADER *********/
 header {
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 #header-nav {
-  background-color: white;
+  background-color: #ffffff;
   border: none;
 }
 #logo { /*** UBICACION TITULO DE LA PAGINA ***/
@@ -57,13 +55,10 @@ header {
 #logo p {
   font-size: 1.1em;
 }
-#logo a {
+#logo:hover a {
   text-decoration: none;
 }
-#logo a:hover {
-  text-decoration: none;
-}
-#logo a:visited {
+#logo:visited a {
   text-decoration: none;
 }
 #logo-img {
@@ -88,7 +83,7 @@ header {
   position: relative;
 }
 #nav-list li a {
-  background: white;
+  background: #ffffff;
   padding: 5px 20px;
   z-index: 1;
 }
@@ -98,7 +93,7 @@ header {
 #nav-list::after {
   content: " ";
   position: absolute;
-  width: 602px;
+  width: 624px;
   height: 32px;
   background: url(img/mesh-black.png);
   top: 6px;
@@ -114,19 +109,26 @@ header {
 main {
   margin: 15px 0px;
 }
+
 #jumbo {
   margin-bottom: 20px;
 }
+#carroza {
+  height: 412px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
 .box {
-  background-color: white;
+  background-color: #ffffff;
   padding: 10px;
   margin-bottom: 15px;
 }
 .box a {
   border: none;
 }
+
 #bg-wrapper {
-  background-color: white;
+  background-color: #ffffff;
   padding: 10px;
 }
 #bg-wrapper a {
@@ -143,12 +145,12 @@ main {
   position: relative;
 }
 
-#front {
+#front { /* THUMBNAIL IMG */
   position: relative;
   z-index: 1;
   transition: opacity 500ms ease-in-out;
 }
-#back {
+#back { /* THUMBNAIL IMG */
   opacity: 0;
   position: absolute;
   top: 0;
@@ -157,18 +159,17 @@ main {
   z-index: 0;
   transition: opacity 500ms ease-in-out;
 }
-
 #bg-wrapper section a:hover > #front{
     opacity: 0;
 }
-
 #bg-wrapper section a:hover > #back {
     opacity: 1;
 }
 
-#bg-wrapper > h3 { /* TITULOS COLUMNAS */
-  margin-top: 5px;
-  margin-bottom: 5px;
+/********* TITULOS COLUMNAS *********/
+
+#bg-wrapper > h3 {
+  margin: 5px 0px;
   font-weight: bold;
   font-size: 1.1em;
   padding: 10px 20px;
@@ -190,6 +191,7 @@ main {
   font-size: 1em;
   padding-left: 20px;
 }
+
 /********* COLUMNAS *********/
 #col-2k16 {
   padding: 0px;
@@ -202,12 +204,18 @@ main {
 #aside {
   padding: 0px 15px;
 }
-#aside #autores h3 {
+#aside #titulos h3 {
   margin: 10px;
   padding-left: 25px;
 }
-#autores #bg-wrapper section {
-  margin: 5px 10px;
+#aside #titulos p {
+  margin-bottom: 5px;
+}
+#aside #titulos h5 {
+  margin-bottom: 5px;
+}
+#titulos #bg-wrapper section {
+  margin: 0px 10px;
 }
 #tuti {
   color: #FF4500;
@@ -233,6 +241,7 @@ main {
 #upcoming {
   padding: 0px;
 }
+/******** PLAQUETAS **********/
 #plaquetas section {
   margin-top: 15px;
 }
@@ -242,27 +251,29 @@ main {
 #plaquetas img {
   margin-right: 10px;
 }
-#contact {
-  padding: 5px 15px;
-}
-#mailto a {
-  padding-left: 20px;
-  text-decoration: none;
-  font-style: italic;
-  font-size: 1em;
-}
 /********* FOOTER *********/
 footer {
   background: url(img/mesh-blue.png)
 }
-footer > .container {
-  background-color: white;
+#footer-wrapper {
+  background-color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 #ending {
-  padding-left: 15px;
+  margin-left: 15px;
 }
 #ending span {
   font-size: 0.8em;
+  display: none;
+}
+#ending a {
+  color: #333333;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+#ending a:hover {
+  text-decoration: underline;
 }
 #copy {
   font-size: 0.9em;
@@ -274,30 +285,41 @@ footer > .container {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-#about h3 {
-  font-size: 1.2em;
-  margin-top: 35px;
-  margin-bottom: 20px;
+
+#about .indent {
+  text-indent: 30px;
 }
 #about p {
-  text-indent: 50px;
   margin-bottom: 35px;
 }
 #about h2 {
-  font-size: 1.4em;
+  font-weight: bold;
+  font-size: 1.2em;
   margin-top: 35px;
   margin-bottom: 20px;
+  text-decoration: underline;
+}
+#mail a {
+  text-indent: none;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1em;
+}
+
+/***** LIBRERIAS ********/
+#librerias {
+  margin-top: 15px;
 }
 #librerias h2 {
   font-size: 1.4em;
   margin-top: 35px;
   margin-bottom: 35px;
 }
-#librerias h3 {
+#librerias h3 { /* LOCALIDADES LIBRERIAS */
+  font-size: 1.2em;
   margin-top: 35px;
   margin-bottom: 10px;
 }
-
 #about ul {
   padding-left: 20px;
   list-style: none;
@@ -307,21 +329,9 @@ footer > .container {
   margin: 10px 0px;
   font-size: 0.9em;
 }
-
-
-#carroza {
-  height: 412px;
-  margin-bottom: 20px;
-  padding: 0px;
+.box.mesh-turquoise {
+  margin-bottom: 0px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -420,9 +430,6 @@ footer > .container {
     padding: 0px;
   }
   #aside {
-    padding: 0px;
-  }
-  #contact {
     padding: 0px;
   }
   /* LIBRERIAS.HTML */
