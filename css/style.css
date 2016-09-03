@@ -27,6 +27,7 @@ body {
 }
 .mesh-green {
   background: url(img/mesh-green.png);
+  padding: 10px;
 }
 .mesh-pink {
   background: url(img/mesh-pink.png);
@@ -37,9 +38,8 @@ body {
 .mesh-crimson {
   background: url(img/mesh-crimson.png);
 }
-.mesh-light-steel-blue {
-  background: url(img/mesh-light-steel-blue.png);
-  padding: 10px;
+.mesh-grape {
+  background: url(img/mesh-grape.png);
 }
 
 /********* HEADER *********/
@@ -263,7 +263,11 @@ main {
 }
 /********* FOOTER *********/
 footer {
-  background: url(img/mesh-blue.png)
+  background: url(img/mesh-aquamarine.png)
+}
+footer.panel-footer {
+  border: none;
+  border-radius: 0px;
 }
 #footer-wrapper {
   background-color: #ffffff;
@@ -346,11 +350,11 @@ footer {
   margin: 10px 0px;
   font-size: 0.9em;
 }
-.box.mesh-green {
+.box.mesh-grape {
   margin-bottom: 0px;
   height: 620px;
 }
-.box.mesh-green #bg-wrapper { /*LIBRERIAS*/
+.box.mesh-grape #bg-wrapper { /*LIBRERIAS*/
   height: 600px;
 }
 
@@ -478,10 +482,10 @@ p.#bookstyle p {
   #about ul li {
     letter-spacing: normal;
   }
-  .box.mesh-green {
+  .box.mesh-grape {
     height: unset;
   }
-  .box.mesh-green #bg-wrapper {
+  .box.mesh-grape #bg-wrapper {
     height: unset;
   }
 }
