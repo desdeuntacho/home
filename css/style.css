@@ -1,5 +1,5 @@
 * {
-  outline: 0px solid lightsteelblue;
+  outline: 0px solid cyan;
 }
 
 body {
@@ -23,9 +23,23 @@ body {
 }
 .mesh-turquoise {
   background: url(img/mesh-turquoise.png);
+  padding: 10px;
+}
+.mesh-green {
+  background: url(img/mesh-green.png);
 }
 .mesh-pink {
   background: url(img/mesh-pink.png);
+}
+.mesh-orange {
+  background: url(img/mesh-orange.png);
+}
+.mesh-crimson {
+  background: url(img/mesh-crimson.png);
+}
+.mesh-light-steel-blue {
+  background: url(img/mesh-light-steel-blue.png);
+  padding: 10px;
 }
 
 /********* HEADER *********/
@@ -39,7 +53,7 @@ header {
 }
 #logo { /*** CONTENEDOR TITULO DE LA PAGINA ***/
   height: 120px;
-  margin-left: 35px;
+  margin-left: 20px;
   padding-top: 15px;
   position: relative;
   z-index: 1000;
@@ -121,15 +135,13 @@ main {
   padding: 10px;
   margin-bottom: 15px;
 }
-.box a {
-  border: none;
-}
 
 #bg-wrapper {
   background-color: #ffffff;
   padding: 10px;
 }
 #bg-wrapper a {
+  border: none;
   color: inherit;
   text-decoration: underline;
 }
@@ -176,16 +188,16 @@ main {
   margin-bottom: 15px;
   padding: 5px;
 }
-#bg-wrapper section > h4 {
+#bg-wrapper h4 {
   font-size: 1.05em;
   font-weight: bold;
   padding-left: 20px;
 }
-#bg-wrapper section > h5 {
+#bg-wrapper h5 {
   font-size: 1em;
   padding-left: 20px;
 }
-#bg-wrapper section > p {
+#bg-wrapper p {
   font-size: 1em;
   padding-left: 20px;
 }
@@ -270,6 +282,12 @@ footer {
   font-size: 0.9em;
   text-decoration: none;
 }
+#ending a:visited {
+  background-color: white;
+}
+#ending a:active {
+  background-color: white;
+}
 #ending a:hover {
   text-decoration: underline;
 }
@@ -305,6 +323,7 @@ footer {
 }
 
 /***** LIBRERIAS ********/
+
 #librerias {
   margin-top: 15px;
 }
@@ -327,11 +346,11 @@ footer {
   margin: 10px 0px;
   font-size: 0.9em;
 }
-.box.mesh-turquoise {
+.box.mesh-green {
   margin-bottom: 0px;
   height: 620px;
 }
-.box.mesh-turquoise #bg-wrapper { /*LIBRERIAS*/
+.box.mesh-green #bg-wrapper { /*LIBRERIAS*/
   height: 600px;
 }
 
@@ -339,21 +358,49 @@ footer {
 
 
 
+/* LIBROS */
+#libros h4 {
+  margin-top: 25px;
+}
+img.bookcover {
+  padding: 10px 15px;
+}
+p.#bookstyle p {
+  font-size: 50px;
+}
+#bg-colecciones {
+  background-color: #ffffff;
+  padding: 10px;
+}
+/*#libros section p > span {
+  font-style: italic;
+}*/
+
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  #logo-img {
+    margin-bottom: 10px;
+  }
+  #logo {
+    margin-left: 35px;
+  }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  #nav-list {
-    margin-top: 0px;
+  #nav-list::after {
+    width: 495px;
+  }
+  #carroza {
+    height: 337px;
   }
   #plaquetas section a img {
     height: 150px;
     padding-top: 10px;
     padding-bottom: 20px;
   }
+
 }
 
 /********** Small devices only **********/
@@ -362,14 +409,15 @@ footer {
     margin-bottom: 20px;
   }
   #nav-list {
-    margin-top: 15px;
+    margin-top: 20px;
   }
-  .box.mesh-light-steel-blue { /*LIBRERIAS*/
-    height: 620px;
+  #nav-list::after {
+    width: 495px;
   }
-  .box.mesh-light-steel-blue #bg-wrapper { /*LIBRERIAS*/
-    height: 600px;
-  }
+  #nav-list {
+    margin-top: 20px;
+    margin-right: 15px;
+}
 }
 
 /********** Extra small devices only **********/
@@ -400,9 +448,6 @@ footer {
     content: none;
   }
   /* LOGO BRAND TITLE */
-  #logo {
-    margin-left: 20px;
-  }
   #logo h1 {
     font-size: 1.8em;
   }
@@ -425,14 +470,18 @@ footer {
   #aside {
     padding: 0px;
   }
+  /* FOOTER */
+  #ending {
+    margin-left: 0px;
+  }
   /* LIBRERIAS.HTML */
   #about ul li {
     letter-spacing: normal;
   }
-  .box.mesh-turquoise {
+  .box.mesh-green {
     height: unset;
   }
-  .box.mesh-turquoise #bg-wrapper {
+  .box.mesh-green #bg-wrapper {
     height: unset;
   }
 }

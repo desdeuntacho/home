@@ -16,8 +16,8 @@
       <nav id="header-nav" class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
-            <a href="index.html" class="pull-left">
-              <img id="logo-img" src="img/logo.jpg" alt="Logo" class="hidden-xs">
+            <a id="logo-img" href="index.html" class="pull-left">
+              <img  src="img/logo.jpg" alt="Logo" class="hidden-xs">
             </a>
             <div id="logo" class="navbar-brand">
               <h1>Desde un tacho</h1>
@@ -48,7 +48,7 @@
                 <a href="colecciones.html">
                  <span class="glyphicon glyphicon-book"></span> Colecciones</a>
               </li>
-              <li>
+              <li class="visible-xs visible-lg">
                 <a href="about.html#contact">
                  <span class="glyphicon glyphicon-envelope"></span> Contacto</a>
               </li>
@@ -80,22 +80,22 @@
               <div id="bg-wrapper">
                 <h3>Colección 2016</h3>
                 <section>
-                  <a href="#" class="thumbnail">
-                    <img id="front" src="img/cuaderno3.jpg" alt="thumbs">
-                    <img id="back" src="img/cuaderno3-e.jpg" alt="Thumbs">
-                  </a>
-                  <h4>La promesa del verano intacta</h4>
-                  <h5>Tuti Curani</h5>
-                  <p>Primera edición<br>Marzo 2016<br>36 páginas</p>
-                </section>
-                <section>
-                  <a href="#" class="thumbnail">
+                  <a href="jorgelina.html" class="thumbnail">
                     <img id="front" src="img/cuaderno4.jpg" alt="thumbs">
                     <img id="back" src="img/cuaderno4-e.jpg" alt="Thumbs">
                   </a>
                   <h4>Rosita</h4>
                   <h5>Mini Jorgelina</h5>
                   <p>Primera edición<br>Agosto 2016<br>36 páginas</p>
+                </section>
+                <section>
+                  <a href="tuti.html" class="thumbnail">
+                    <img id="front" src="img/cuaderno3.jpg" alt="thumbs">
+                    <img id="back" src="img/cuaderno3-e.jpg" alt="Thumbs">
+                  </a>
+                  <h4>La promesa del verano intacta</h4>
+                  <h5>Tuti Curani</h5>
+                  <p>Primera edición<br>Marzo 2016<br>36 páginas</p>
                 </section>
               </div>
             </div> <!-- .BOX -->
@@ -105,7 +105,7 @@
               <div id="bg-wrapper">
                 <h3>Colección 2015</h3>
                 <section>
-                  <a href="#" class="thumbnail">
+                  <a href="davidnahon.html" class="thumbnail">
                     <img src="img/cuaderno1.jpg" alt="Thumbs">
                   </a>
                   <h4>Cómo me convertí en robot</h4>
@@ -113,7 +113,7 @@
                   <p>Primera edición<br>Diciembre 2015<br>48 páginas</p>
                 </section>
                 <section>
-                  <a href="#" class="thumbnail">
+                  <a href="antolin.html" class="thumbnail">
                     <img id="front" src="img/cuaderno2.jpg" alt="thumbs">
                     <img id="back" src="img/cuaderno2-e.jpg" alt="Thumbs">
                   </a>
@@ -125,13 +125,13 @@
             </div> <!-- .BOX -->
           </div>
         </div>
-        <div id="aside" class="col-xs-12 col-md-4"> <!-- BARRA LATERAL -->
+        <div id="aside" class="col-xs-12 col-sm-6 col-md-4 pull-right"> <!-- BARRA LATERAL -->
           <div id="titulos" class="box mesh-black">
             <div id="bg-wrapper">
               <h3>Nuestros títulos</h3>
               <section id="minijor">
                 <h5>Mini Jorgelina</h5>
-                <p class="clearfix"><a href="rosita.html">Rosita</a></p>
+                <p class="clearfix"><a href="jorgelina.html">Rosita</a></p>
               </section>
               <section id="tuti">
                 <h5>Tuti Curani</h5>
@@ -139,11 +139,11 @@
               </section>
               <section id="nahon">
                 <h5>David Nahón</h5>
-                <p class="clearfix"><a href="david.html">Cómo me convertí en robot</a></p>
+                <p class="clearfix"><a href="davidnahon.html">Cómo me convertí en robot</a></p>
               </section>
               <section id="antolin">
                 <h5>Antolín</h5>
-                <p class="clearfix"><a href="anto.html">Amigo de los Mutantes</a></p>
+                <p class="clearfix"><a href="antolin.html">Amigo de los Mutantes</a></p>
               </section>
               <section id="fradi">
                 <h5>Fradi</h5>
@@ -152,7 +152,7 @@
               </section>
               <section id="mauro">
                 <h5>Mauro Moschini</h5>
-                <p class="clearfix"><a href="mauro.html">Poemas cortos</a></p>
+                <p class="clearfix"><a href="maurom.html">Poemas cortos</a></p>
               </section>
               <section id="luki">
                 <h5>Lucas Santamarta</h5>
@@ -160,16 +160,11 @@
               </section>
             </div>
           </div>
-          <div class="box mesh-black">
-            <div id="bg-wrapper">
-              <h3>De próxima aparición</h3>
-            </div>
-          </div>
         </div>
-        <div class="col-xs-12 col-md-4 hidden-xs hidden-sm">
+        <div class="col-xs-12 col-sm-6 col-md-4 hidden-xs">
           <div id="plaquetas" class="box mesh-black">
             <div id="bg-wrapper">
-              <h3>Plaquetas</h3>
+              <h3>Serie Plaquetas</h3>
               <section>
                 <a href="#" class="img-responsive pull-left">
                   <img src="img/plaq1-s.jpg" alt="Thumbs">
@@ -186,8 +181,8 @@
                 <h5>Fradi</h5>
                 <p class="clearfix">Primera edición<br>Diciembre 2014<br>32 páginas</p>
               </section>
-              <section class="hidden">
-                <a href="#" class="thumbnail pull-left">
+              <section class="">
+                <a href="#" class="img-responsive pull-left">
                   <img src="img/plaq3-s.jpg" alt="Thumbs">
                 </a>
                 <h4>Poemas cortos</h4>
@@ -197,19 +192,24 @@
             </div>
           </div>
         </div>
-
-
+        <div class="col-xs-12 col-sm-6 col-md-4 hidden-xs">
+          <div class="box mesh-black ">
+            <div id="bg-wrapper">
+              <h4>Proximamente</h4>
+            </div>
+          </div>
+        </div>
       </div><!-- .container -->
     </main>
     <footer class="panel-footer">
       <div class="container">
         <div id="footer-wrapper" class="col-xs-10 col-xs-offset-1">
           <ul id="ending" class="nav navbar-nav navbar-left">
-            <li role="presentation"><a href=""><span class="glyphicon glyphicon-book"></span> Colecciones</a></li>
             <li role="presentation"><a href="librerias.html"><span class="glyphicon glyphicon-tag"></span> Librerías</a></li>
-            <li role="presentation"><a href=""><span class="glyphicon glyphicon-briefcase"></span> Prensa</a></li>
+            <li role="presentation"><a href=""><span class="glyphicon glyphicon-book"></span> Prensa</a></li>
+            <li role="presentation"><a href="https://www.facebook.com/desdeuntacho/"><span class="glyphicon glyphicon-briefcase"></span> Facebook</a></li>
           </ul>
-          <p id="copy" class="navbar-text navbar-right">&copy 2016 Desde un tacho Ediciones</p>
+          <p id="copy" class="navbar-text navbar-right">&copy 2016 Desde un tacho</p>
         </div>
       </div><!-- .container -->
     </footer>

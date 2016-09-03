@@ -16,13 +16,11 @@
       <nav id="header-nav" class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
-            <a href="index.html" class="pull-left">
-              <img id="logo-img" src="img/logo.jpg" alt="Logo" class="hidden-xs">
+            <a id="logo-img" href="index.html" class="pull-left">
+              <img  src="img/logo.jpg" alt="Logo" class="hidden-xs">
             </a>
             <div id="logo" class="navbar-brand">
-              <a href="index.html">
-                <h1>Desde un tacho</h1>
-              </a>
+              <h1>Desde un tacho</h1>
               <p>Editorial artesanal</p>
             </div>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -50,7 +48,7 @@
                 <a href="colecciones.html">
                  <span class="glyphicon glyphicon-book"></span> Colecciones</a>
               </li>
-              <li>
+              <li class="visible-xs visible-lg">
                 <a href="about.html#contact">
                  <span class="glyphicon glyphicon-envelope"></span> Contacto</a>
               </li>
@@ -59,21 +57,20 @@
         </div><!-- .container -->
       </nav><!-- #header-nav -->
     </header>
-
     <main>
       <div class="container">
-        <div class="row">
+        <div class="row" id="librerias">
           <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3">
-            <div id="" class="box mesh-pink">
+            <div id="libros" class="box mesh-pink">
               <div id="bg-wrapper">
                 <section>
-                  <a href="#" class="thumbnail">
-                    <img id="front" src="img/cuaderno4.jpg" alt="thumbs">
-                    <img id="back" src="img/cuaderno4-e.jpg" alt="Thumbs">
-                  </a>
+                  <img src="img/cuaderno4.jpg" alt="Rosita" class="bookcover img-responsive">
                   <h4>Rosita</h4>
                   <h5>Mini Jorgelina</h5>
                   <p>Primera edición<br>Agosto 2016<br>36 páginas</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  <h4>Sobre Jorgelina</h4>
+                  <p>Jorgelina se cría en La Plata desde 1992, estudia Letras en la UNLP, y convive con seis gatos llamados Mini, Pon, Dobleú, Curtis, Chillón y Charly.<br>Sostiene un ecosistema de blogs difíciles de encontrar como <a href="https://rosamiel.blogspot.com.ar">rosamiel</a>, <a href="https://buenconejo.blogspot.com.ar">buenconejo</a>, <a href="https://arbolpetunia.blogspot.com.ar">arbolpetunia</a> y <a href="https://laespaldavioleta.blogspot.com.ar">laespaldavioleta</a>. <br>Una vez Blogger le envió una carta. <br>Este es su primer libro.</p>
                 </section>
               </div>
             </div>
@@ -89,11 +86,11 @@
       <div class="container">
         <div id="footer-wrapper" class="col-xs-10 col-xs-offset-1">
           <ul id="ending" class="nav navbar-nav navbar-left">
-            <li role="presentation"><a href=""><span class="glyphicon glyphicon-book"></span> Colecciones</a></li>
             <li role="presentation"><a href="librerias.html"><span class="glyphicon glyphicon-tag"></span> Librerías</a></li>
-            <li role="presentation"><a href=""><span class="glyphicon glyphicon-briefcase"></span> Prensa</a></li>
+            <li role="presentation"><a href=""><span class="glyphicon glyphicon-book"></span> Prensa</a></li>
+            <li role="presentation"><a href="https://www.facebook.com/desdeuntacho/"><span class="glyphicon glyphicon-briefcase"></span> Facebook</a></li>
           </ul>
-          <p id="copy" class="navbar-text navbar-right">&copy 2016 Desde un tacho Ediciones</p>
+          <p id="copy" class="navbar-text navbar-right">&copy 2016 Desde un tacho</p>
         </div>
       </div><!-- .container -->
     </footer>
