@@ -11,7 +11,6 @@ body {
 }
 .mesh-black {
   background: url(img/mesh-black.png);
-  padding: 10px;
 }
 .mesh-blue {
   background: url(img/mesh-blue.png);
@@ -40,6 +39,12 @@ body {
 }
 .mesh-grape {
   background: url(img/mesh-grape.png);
+}
+.mesh-brown {
+  background: url(img/mesh-brown.png);
+}
+.mesh-navy {
+  background: url(img/mesh-navy.png)
 }
 
 /********* HEADER *********/
@@ -357,7 +362,12 @@ footer.panel-footer {
 .box.mesh-grape #bg-wrapper { /*LIBRERIAS*/
   height: 600px;
 }
-
+.box.mesh-brown { /* FRADI */
+  height: 1025px;
+}
+.box.mesh-brown #bg-wrapper { /*FRADI*/
+  height: 1005px;
+}
 
 
 
@@ -369,8 +379,8 @@ footer.panel-footer {
 img.bookcover {
   padding: 10px 15px;
 }
-p.#bookstyle p {
-  font-size: 50px;
+#libros #bg-wrapper p {
+  font-size: 1em;
 }
 #bg-colecciones {
   background-color: #ffffff;
@@ -486,6 +496,12 @@ p.#bookstyle p {
     height: unset;
   }
   .box.mesh-grape #bg-wrapper {
+    height: unset;
+  }
+  .box.mesh-brown {
+    height: unset;
+  }
+  .box.mesh-brown #bg-wrapper {
     height: unset;
   }
 }
