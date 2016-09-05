@@ -105,7 +105,7 @@ header {
   z-index: 1;
 }
 #nav-list li:active a{
-  background: url(mesh-black);
+  background: ;
 }
 #nav-list::after {
   content: " ";
@@ -378,6 +378,8 @@ footer.panel-footer {
 }
 img.bookcover {
   padding: 10px 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #libros #bg-wrapper p {
   font-size: 1em;
@@ -503,5 +505,19 @@ img.bookcover {
   }
   .box.mesh-brown #bg-wrapper {
     height: unset;
+  }
+  /* COLECCIONES PLAQUETAS */
+  #plaquetas section a img {
+    margin-bottom: 15px;
+  }
+  #plaquetas section a {
+    float: none !important;
+  }
+  #bg-colecciones {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #colecciones {
+    padding: 0px;
   }
 }
