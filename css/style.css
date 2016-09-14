@@ -74,6 +74,9 @@ header {
 #logo h1:active {
   color: #B0C4DE;
 }
+#logo a:focus, #logo a:hover {
+  text-decoration: none;
+}
 #logo p {
   font-size: 1.1em;
   margin-bottom: 0px;
@@ -259,6 +262,7 @@ main {
 /******** PLAQUETAS **********/
 #plaquetas section {
   margin-top: 15px;
+  margin-left: 5px;
 }
 #plaquetas h4 {
   margin-top: 5px;
@@ -291,10 +295,7 @@ footer.panel-footer {
   font-size: 0.9em;
   text-decoration: none;
 }
-#ending a:visited {
-  background-color: white;
-}
-#ending a:active {
+#ending a:focus, #ending a:hover {
   background-color: white;
 }
 #ending a:hover {
@@ -401,6 +402,9 @@ img.bookcover {
   #logo {
     margin-left: 35px;
   }
+  #plaquetas section {
+  margin-left: 20px;
+  }
 }
 
 /********** Medium devices only **********/
@@ -411,12 +415,15 @@ img.bookcover {
   #carroza {
     height: 337px;
   }
+
   #plaquetas section a img {
     height: 150px;
     padding-top: 10px;
     padding-bottom: 20px;
   }
-
+  #workin {
+    float: right;
+  }
 }
 
 /********** Small devices only **********/
