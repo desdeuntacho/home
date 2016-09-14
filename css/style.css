@@ -4,15 +4,13 @@
 
 body {
   font-size: 16px;
-  background-color: white;
+  background-color: #ffffff;
   color: #333333;
   font-family: 'Lora';
   line-height: 1.5;
 }
-
 .mesh-black {
   background: url(img/mesh-black.png);
-  padding: 10px;
 }
 .mesh-blue {
   background: url(img/mesh-blue.png);
@@ -22,37 +20,67 @@ body {
   background: url(img/mesh-red.png);
   padding: 10px;
 }
+.mesh-turquoise {
+  background: url(img/mesh-turquoise.png);
+  padding: 10px;
+}
+.mesh-green {
+  background: url(img/mesh-green.png);
+  padding: 10px;
+}
+.mesh-pink {
+  background: url(img/mesh-pink.png);
+}
+.mesh-orange {
+  background: url(img/mesh-orange.png);
+}
+.mesh-crimson {
+  background: url(img/mesh-crimson.png);
+}
+.mesh-grape {
+  background: url(img/mesh-grape.png);
+}
+.mesh-brown {
+  background: url(img/mesh-brown.png);
+}
+.mesh-navy {
+  background: url(img/mesh-navy.png)
+}
 
 /********* HEADER *********/
 header {
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 #header-nav {
-  background-color: white;
+  background-color: #ffffff;
   border: none;
 }
-#header-nav h1 { /*** TITULO DE LA PAGINA ***/
-  font-size: 1.5em;
-  color: #4682B4;
-}
-#header-nav h1:hover {
-  color: #B0C4DE;
-}
-#header-nav p {
-  font-size: 1.1em;
-}
-#header-nav a:hover {
-  text-decoration: none;
-}
-
-#logo { /*** UBICACION TITULO DE LA PAGINA ***/
-  height: 135px;
-  margin-left: 35px;
-  padding: 15px 0px;
+#logo { /*** CONTENEDOR TITULO DE LA PAGINA ***/
+  height: 120px;
+  margin-left: 20px;
+  padding-top: 15px;
   position: relative;
   z-index: 1000;
 }
-
+#logo h1 { /*** TITULO DE LA PAGINA ***/
+  font-size: 1.5em;
+  color: #4682B4;
+  transition: color 200ms linear;
+}
+#logo h1:hover {
+  color: #5F9EA0;
+}
+#logo h1:active {
+  color: #B0C4DE;
+}
+#logo a:focus, #logo a:hover {
+  text-decoration: none;
+}
+#logo p {
+  font-size: 1.1em;
+  margin-bottom: 0px;
+}
 #logo-img {
   margin-left: 40px;
   box-shadow: 15px 15px lightgrey;
@@ -69,20 +97,23 @@ header {
   z-index: 0;
 }
 #nav-list { /*** LISTA BOTONES ***/
-  margin-top: 35px;
+  margin-top: 50px;
   margin-right: 7px;
   border: 1px solid #4d4d4d;
   position: relative;
 }
 #nav-list li a {
-  background: white;
+  background: #ffffff;
   padding: 5px 20px;
   z-index: 1;
+}
+#nav-list li:active a{
+  background: ;
 }
 #nav-list::after {
   content: " ";
   position: absolute;
-  width: 602px;
+  width: 624px;
   height: 32px;
   background: url(img/mesh-black.png);
   top: 6px;
@@ -98,27 +129,65 @@ header {
 main {
   margin: 15px 0px;
 }
+
 #jumbo {
   margin-bottom: 20px;
 }
+#carroza {
+  height: 412px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
 .box {
-  background-color: white;
+  background-color: #ffffff;
   padding: 10px;
   margin-bottom: 15px;
 }
-.box a {
-  border: none;
-}
+
 #bg-wrapper {
-  background-color: white;
+  background-color: #ffffff;
   padding: 10px;
 }
 #bg-wrapper a {
+  border: none;
   color: inherit;
+  text-decoration: underline;
 }
-#bg-wrapper > h3 { /* TITULOS COLUMNAS */
-  margin-top: 5px;
-  margin-bottom: 5px;
+#bg-wrapper a:hover {
+  text-decoration: none;
+}
+#bg-wrapper a:visited {
+  text-decoration: none;
+}
+#bg-wrapper section a {
+  position: relative;
+}
+
+#front { /* THUMBNAIL IMG */
+  position: relative;
+  z-index: 1;
+  transition: opacity 500ms ease-in-out;
+}
+#back { /* THUMBNAIL IMG */
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  transition: opacity 500ms ease-in-out;
+}
+#bg-wrapper section a:hover > #front{
+    opacity: 0;
+}
+#bg-wrapper section a:hover > #back {
+    opacity: 1;
+}
+
+/********* TITULOS COLUMNAS *********/
+
+#bg-wrapper > h3 {
+  margin: 5px 0px;
   font-weight: bold;
   font-size: 1.1em;
   padding: 10px 20px;
@@ -127,44 +196,44 @@ main {
   margin-bottom: 15px;
   padding: 5px;
 }
-#bg-wrapper section > h4 {
+#bg-wrapper h4 {
   font-size: 1.05em;
   font-weight: bold;
   padding-left: 20px;
 }
-#bg-wrapper section > h5 {
+#bg-wrapper h5 {
   font-size: 1em;
   padding-left: 20px;
 }
-#bg-wrapper section > p {
+#bg-wrapper p {
   font-size: 1em;
   padding-left: 20px;
 }
+
 /********* COLUMNAS *********/
-#col-2k15 {
+#col-2k16 {
   padding: 0px;
   padding-right: 15px;
 }
-#col-2k16 {
+#col-2k15 {
   padding: 0px;
   padding-left: 15px;
-}
-#upcoming {
-  padding: 0px;
 }
 #aside {
   padding: 0px 15px;
 }
-#autores .thumbnail {
-  margin-top: 0px;
-  margin-right: 10px;
-  height: 85px;
+#aside #titulos h3 {
+  margin: 10px;
+  padding-left: 25px;
 }
-#autores #bg-wrapper section {
-  margin: 10px 0px;
+#aside #titulos p {
+  margin-bottom: 5px;
 }
-#autores img {
-  border-radius: 50px;
+#aside #titulos h5 {
+  margin-bottom: 5px;
+}
+#titulos #bg-wrapper section {
+  margin: 0px 10px;
 }
 #tuti {
   color: #FF4500;
@@ -178,8 +247,22 @@ main {
 #minijor {
   color: #FF69B4;
 }
+#mauro {
+  color: #9370DB;
+}
+#fradi {
+  color: #05BBC9;
+}
+#luki {
+  color: #1E90FF;
+}
+#upcoming {
+  padding: 0px;
+}
+/******** PLAQUETAS **********/
 #plaquetas section {
   margin-top: 15px;
+  margin-left: 5px;
 }
 #plaquetas h4 {
   margin-top: 5px;
@@ -187,24 +270,36 @@ main {
 #plaquetas img {
   margin-right: 10px;
 }
-#mailto {
-  padding-left: 20px;
-  text-decoration: none;
-  font-style: italic;
-  font-size: 1em;
-}
 /********* FOOTER *********/
 footer {
-  background: url(img/mesh-blue.png)
+  background: url(img/mesh-aquamarine.png)
 }
-footer > .container {
-  background-color: white;
+footer.panel-footer {
+  border: none;
+  border-radius: 0px;
+}
+#footer-wrapper {
+  background-color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 #ending {
-  padding-left: 15px;
+  margin-left: 15px;
 }
 #ending span {
   font-size: 0.8em;
+  display: none;
+}
+#ending a {
+  color: #333333;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+#ending a:focus, #ending a:hover {
+  background-color: white;
+}
+#ending a:hover {
+  text-decoration: underline;
 }
 #copy {
   font-size: 0.9em;
@@ -214,30 +309,138 @@ footer > .container {
 /********** ABOUT.HTML **********/
 #about {
   letter-spacing: 1px;
-}
-#about h2 {
-  font-size: 1.4em;
   margin-bottom: 20px;
 }
+
+#about .indent {
+  text-indent: 30px;
+}
+#about p {
+  margin-bottom: 35px;
+}
+#about h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+#mail a {
+  text-indent: none;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1em;
+}
+
+/***** LIBRERIAS ********/
+
+#librerias {
+  margin-top: 15px;
+}
+#librerias h2 {
+  font-size: 1.4em;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+#librerias h3 { /* LOCALIDADES LIBRERIAS */
+  font-size: 1.2em;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+#about ul {
+  padding-left: 20px;
+  list-style: none;
+}
+#about ul li {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  font-size: 0.9em;
+}
+.box.mesh-grape {
+  margin-bottom: 0px;
+  height: 620px;
+}
+.box.mesh-grape #bg-wrapper { /*LIBRERIAS*/
+  height: 600px;
+}
+.box.mesh-brown { /* FRADI */
+  height: 1025px;
+}
+.box.mesh-brown #bg-wrapper { /*FRADI*/
+  height: 1005px;
+}
+
+
+
+
+/* LIBROS */
+#libros h4 {
+  margin-top: 25px;
+}
+img.bookcover {
+  padding: 10px 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#libros #bg-wrapper p {
+  font-size: 1em;
+}
+#bg-colecciones {
+  background-color: #ffffff;
+  padding: 10px;
+}
+/*#libros section p > span {
+  font-style: italic;
+}*/
 
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
-
+  #logo-img {
+    margin-bottom: 10px;
+  }
+  #logo {
+    margin-left: 35px;
+  }
+  #plaquetas section {
+  margin-left: 20px;
+  }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
-  #nav-list {
-    margin-top: 0px;
+  #nav-list::after {
+    width: 495px;
+  }
+  #carroza {
+    height: 337px;
+  }
+
+  #plaquetas section a img {
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  #workin {
+    float: right;
   }
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  #nav-list {
-    margin-top: 15px;
+  #logo-img {
+    margin-bottom: 20px;
   }
+  #nav-list {
+    margin-top: 20px;
+  }
+  #nav-list::after {
+    width: 495px;
+  }
+  #nav-list {
+    margin-top: 20px;
+    margin-right: 15px;
+}
 }
 
 /********** Extra small devices only **********/
@@ -288,6 +491,40 @@ footer > .container {
     padding: 0px;
   }
   #aside {
+    padding: 0px;
+  }
+  /* FOOTER */
+  #ending {
+    margin-left: 0px;
+  }
+  /* LIBRERIAS.HTML */
+  #about ul li {
+    letter-spacing: normal;
+  }
+  .box.mesh-grape {
+    height: unset;
+  }
+  .box.mesh-grape #bg-wrapper {
+    height: unset;
+  }
+  .box.mesh-brown {
+    height: unset;
+  }
+  .box.mesh-brown #bg-wrapper {
+    height: unset;
+  }
+  /* COLECCIONES PLAQUETAS */
+  #plaquetas section a img {
+    margin-bottom: 15px;
+  }
+  #plaquetas section a {
+    float: none !important;
+  }
+  #bg-colecciones {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #colecciones {
     padding: 0px;
   }
 }

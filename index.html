@@ -4,30 +4,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Desde un tacho Ediciones</title>
-
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700" rel="stylesheet">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <title>Desde un tacho Ediciones</title>
   </head>
   <body>
     <header>
       <nav id="header-nav" class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
-            <a href="index.html" class="pull-left">
-              <img id="logo-img" src="img/logo.jpg" alt="Logo" class="hidden-xs">
+            <a id="logo-img" href="index.html" class="pull-left">
+              <img  src="img/logo.jpg" alt="Logo" class="hidden-xs">
             </a>
             <div id="logo" class="navbar-brand">
-              <a href="index.html">
-                <h1>Desde un tacho</h1>
-              </a>
+              <a href="index.html"><h1>Desde un tacho</h1></a>
               <p>Editorial artesanal</p>
             </div>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -35,28 +28,29 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
+            </button>
           </div>
           <div id="collapsable-nav" class="collapse navbar-collapse">
-             <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
               <li class="visible-xs active">
                 <a href="index.html">
-                  <span class="glyphicon glyphicon-home"></span> Inicio</a>
+                 <span class="glyphicon glyphicon-home"></span> Inicio</a>
               </li>
               <li>
                 <a href="about.html">
-                  <span class="glyphicon glyphicon-trash"></span> Acerca de</a>
+                 <span class="glyphicon glyphicon-trash"></span> Acerca de</a>
               </li>
               <li>
-                <a href="#">
-                  <span class="glyphicon glyphicon-gift"></span> Donde conseguirlos</a>
+                <a href="librerias.html">
+                 <span class="glyphicon glyphicon-gift"></span> Donde conseguirlos</a>
               </li>
               <li>
-                <a href="#">
-                  <span class="glyphicon glyphicon-envelope"></span> Contacto</a>
+                <a href="colecciones.html">
+                 <span class="glyphicon glyphicon-book"></span> Colecciones</a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="glyphicon glyphicon-question-sign"></span> Pregunte</a>
+              <li class="visible-xs visible-lg">
+                <a href="about.html#contact">
+                 <span class="glyphicon glyphicon-envelope"></span> Contacto</a>
               </li>
             </ul><!-- #nav-list -->
           </div><!-- .collapse .navbar-collapse -->
@@ -67,135 +61,141 @@
     <main>
       <div class="container">
         <div id="main-col" class="col-xs-12 col-md-8">
-          <img id="jumbo" src="img/cover.jpg" alt="Cover photo" class="img-responsive">
+          <div id="carroza" class="col-xs-12 visible-md visible-lg">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="img/cover1.jpg" alt="Chania">
+                </div>
+                <div class="item">
+                  <img src="img/cover2.jpg" alt="Chania">
+                </div>
+              </div>
+            </div>
+          </div>
+          <img id="jumbo" src="img/cover1.jpg" alt="Cover" class="img-responsive hidden-md hidden-lg">
+          <div id="col-2k16" class="col-xs-12 col-sm-6 col-md-6">
+            <div class="box mesh-black">
+              <div id="bg-wrapper">
+                <h3>Colección 2016</h3>
+                <section>
+                  <a href="jorgelina.html" class="thumbnail">
+                    <img id="front" src="img/cuaderno4.jpg" alt="thumbs">
+                    <img id="back" src="img/cuaderno4-e.jpg" alt="Thumbs">
+                  </a>
+                  <h4>Rosita</h4>
+                  <h5>Mini Jorgelina</h5>
+                  <p>Primera edición<br>Agosto 2016<br>36 páginas</p>
+                </section>
+                <section>
+                  <a href="tuti.html" class="thumbnail">
+                    <img id="front" src="img/cuaderno3.jpg" alt="thumbs">
+                    <img id="back" src="img/cuaderno3-e.jpg" alt="Thumbs">
+                  </a>
+                  <h4>La promesa del verano intacta</h4>
+                  <h5>Tuti Curani</h5>
+                  <p>Primera edición<br>Marzo 2016<br>36 páginas</p>
+                </section>
+              </div>
+            </div> <!-- .BOX -->
+          </div><!-- end COL-XX -->
           <div id="col-2k15" class="col-xs-12 col-sm-6 col-md-6">
             <div class="box mesh-black">
               <div id="bg-wrapper">
-                <h3>2015</h3>
+                <h3>Colección 2015</h3>
                 <section>
-                  <a href="#" class="thumbnail">
+                  <a href="davidnahon.html" class="thumbnail">
                     <img src="img/cuaderno1.jpg" alt="Thumbs">
                   </a>
                   <h4>Cómo me convertí en robot</h4>
                   <h5>David Nahón</h5>
-                  <p>Primera edición<br>Verano 2015<br>48 páginas</p>
+                  <p>Primera edición<br>Diciembre 2015<br>48 páginas</p>
                 </section>
                 <section>
-                  <a href="#" class="thumbnail">
-                    <img src="img/cuaderno2.jpg" alt="Thumbs">
+                  <a href="antolin.html" class="thumbnail">
+                    <img id="front" src="img/cuaderno2.jpg" alt="thumbs">
+                    <img id="back" src="img/cuaderno2-e.jpg" alt="Thumbs">
                   </a>
                   <h4>Amigo de los mutantes</h4>
                   <h5>Antolín</h5>
-                  <p>Primera edición<br>Invierno 2015<br>24 páginas</p>
+                  <p>Primera edición<br>Junio 2015<br>24 páginas</p>
                 </section>
               </div>
             </div> <!-- .BOX -->
-          </div>
-          <div id="col-2k16" class="col-xs-12 col-sm-6 col-md-6">
-            <div class="box mesh-black">
-              <div id="bg-wrapper">
-                <h3>2016</h3>
-                <section>
-                  <a href="#" class="thumbnail">
-                    <img src="img/cuaderno3.jpg" alt="Thumbs">
-                  </a>
-                  <h4>La promesa del verano intacta</h4>
-                  <h5>Tuti Curani</h5>
-                  <p>Primera edición<br>Otoño 2016<br>36 páginas</p>
-                </section>
-                <section>
-                  <a href="#" class="thumbnail">
-                    <img src="img/cuaderno4.jpg" alt="Thumbs">
-                  </a>
-                  <h4>Rosita</h4>
-                  <h5>Mini Jorgelina</h5>
-                  <p>Primera edición<br>Invierno 2016<br>36 páginas</p>
-                </section>
-              </div>
-            </div> <!-- .BOX -->
-          </div>
-          <div id="upcoming" class="col-xs-12 hidden-xs">
-              <div class="box mesh-black">
-                <div id="bg-wrapper">
-                  <h3>De próxima aparición</h3>
-                </div>
-              </div>
           </div>
         </div>
-        <div id="aside" class="col-xs-12 col-md-4"> <!-- BARRA LATERAL -->
-          <div id="autores" class="box mesh-black hidden-xs hidden-sm">
+        <div id="aside" class="col-xs-12 col-sm-6 col-md-4 pull-right"> <!-- BARRA LATERAL -->
+          <div id="titulos" class="box mesh-black">
             <div id="bg-wrapper">
-              <h3>Autores</h3>
-              <section id="antolin">
-                <a href="anto.html" class="thumbnail pull-left">
-                  <img src="img/auth.jpg" alt="Thumbs">
-                </a>
-                <h5>Antolín</h5>
-                <p class="clearfix"><a href="anto.html">Amigo de los Mutantes</a></p>
+              <h3>Nuestros títulos</h3>
+              <section id="minijor">
+                <h5>Mini Jorgelina</h5>
+                <p class="clearfix"><a href="jorgelina.html">Rosita</a></p>
               </section>
               <section id="tuti">
-                <a href="tuti.html" class="thumbnail pull-left">
-                  <img src="img/auth.jpg" alt="Thumbs">
-                </a>
                 <h5>Tuti Curani</h5>
                 <p class="clearfix"><a href="tuti.html">La promesa del verano intacta</a></p>
               </section>
-              <section id="minijor">
-                <a href="minijor.html" class="thumbnail pull-left">
-                  <img src="img/auth.jpg" alt="Thumbs">
-                </a>
-                <h5>Mini Jorgelina</h5>
-                <p class="clearfix"><a href="minijor.html">Rosita</a></p>
-              </section>
               <section id="nahon">
-                <a href="david.html" class="thumbnail pull-left">
-                  <img src="img/auth.jpg" alt="Thumbs">
-                </a>
                 <h5>David Nahón</h5>
-                <p class="clearfix"><a href="david.html">Cómo me convertí en robot</a></p>
+                <p class="clearfix"><a href="davidnahon.html">Cómo me convertí en robot</a></p>
               </section>
-              <section >
-                <a href="fradi.html" class="thumbnail pull-left">
-                  <img src="img/auth.jpg" alt="Thumbs">
-                </a>
+              <section id="antolin">
+                <h5>Antolín</h5>
+                <p class="clearfix"><a href="antolin.html">Amigo de los Mutantes</a></p>
+              </section>
+              <section id="fradi">
                 <h5>Fradi</h5>
-                <p class="clearfix"><a href="fradi.html">Aferrarse al impulso<br>El afecto de la contradicción</a></p>
+                <p class="clearfix"><a href="fradi.html">El afecto de la contradicción</a></p>
+                <p class="clearfix"><a href="fradi.html">Aferrarse al impulso</a></p>
+              </section>
+              <section id="mauro">
+                <h5>Mauro Moschini</h5>
+                <p class="clearfix"><a href="maurom.html">Poemas cortos</a></p>
+              </section>
+              <section id="luki">
+                <h5>Lucas Santamarta</h5>
+                <p class="clearfix"><a href="luki.html">De donde vienen los secretos</a></p>
               </section>
             </div>
           </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 hidden-xs">
           <div id="plaquetas" class="box mesh-black">
             <div id="bg-wrapper">
-              <h3>Plaquetas</h3>
+              <h3>Serie Plaquetas</h3>
               <section>
-                <a href="#" class="img-responsive pull-left">
-                  <img src="img/plaq2-s.jpg" alt="Thumbs">
-                </a>
-                <h4>Aferrarse al impulso</h4>
-                <h5>Fradi</h5>
-                <p class="clearfix">Primera edición<br>Verano 2015<br>32 páginas</p>
-              </section>
-              <section>
-                <a href="#" class="img-responsive pull-left">
+                <a href="fradi.html" class="img-responsive pull-left">
                   <img src="img/plaq1-s.jpg" alt="Thumbs">
                 </a>
                 <h4>El afecto de la contradicción</h4>
                 <h5>Fradi</h5>
-                <p class="clearfix">Primera edición<br>Invierno 2015<br>40 páginas</p>
+                <p class="clearfix">Primera edición<br>Junio 2015<br>40 páginas</p>
               </section>
-              <section class="hidden">
-                <a href="#" class="thumbnail pull-left">
+              <section>
+                <a href="fradi.html" class="img-responsive pull-left">
+                  <img src="img/plaq2-s.jpg" alt="Thumbs">
+                </a>
+                <h4>Aferrarse al impulso</h4>
+                <h5>Fradi</h5>
+                <p class="clearfix">Primera edición<br>Diciembre 2014<br>32 páginas</p>
+              </section>
+              <section class="">
+                <a href="maurom.html" class="img-responsive pull-left">
                   <img src="img/plaq3-s.jpg" alt="Thumbs">
                 </a>
                 <h4>Poemas cortos</h4>
                 <h5>Mauro Moschini</h5>
-                <p class="clearfix">Primera edición<br>Invierno 2015<br>36 páginas</p>
+                <p class="clearfix">Primera edición<br>Agosto 2015<br>36 páginas</p>
               </section>
             </div>
           </div>
-          <div class="box mesh-red">
+        </div>
+        <div id="workin" class="col-xs-12 col-sm-6 col-md-4 hidden-xs">
+          <div class="box mesh-black ">
             <div id="bg-wrapper">
-              <h3>Sugerencias y comentarios</h3>
-              <p id="mailto"><a href="mailto:desdeuntacho@gmail.com">desdeuntacho@gmail.com</a></p>
+              <h4>Sitio en construcción</h4>
             </div>
           </div>
         </div>
@@ -203,15 +203,18 @@
     </main>
     <footer class="panel-footer">
       <div class="container">
-        <ul id="ending" class="nav navbar-nav navbar-left">
-          <li role="presentation"><a href=""><span class="glyphicon glyphicon-book"></span> Colecciones</a></li>
-          <li role="presentation"><a href=""><span class="glyphicon glyphicon-tag"></span> Librerías</a></li>
-          <li role="presentation"><a href=""><span class="glyphicon glyphicon-briefcase"></span> Prensa</a></li>
-        </ul>
-        <p id="copy" class="navbar-text navbar-right">&copy 2016 Desde un tacho Ediciones</p>
+        <div id="footer-wrapper" class="col-xs-10 col-xs-offset-1">
+          <ul id="ending" class="nav navbar-nav navbar-left">
+            <li role="presentation"><a href="librerias.html"><span class="glyphicon glyphicon-tag"></span> Librerías</a></li>
+            <li role="presentation"><a href=""><span class="glyphicon glyphicon-book"></span> Prensa</a></li>
+            <li role="presentation"><a href="https://www.facebook.com/desdeuntacho/"><span class="glyphicon glyphicon-briefcase"></span> Facebook</a></li>
+          </ul>
+          <p id="copy" class="navbar-text navbar-right">&copy; 2016 Desde un tacho</p>
+        </div>
       </div><!-- .container -->
     </footer>
     <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
