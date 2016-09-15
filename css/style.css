@@ -5,12 +5,15 @@
 body {
   font-size: 16px;
   background-color: #ffffff;
-  color: #333333;
+  color: #333;
   font-family: 'Lora';
   line-height: 1.5;
 }
 .mesh-black {
   background: url(img/mesh-black.png);
+}
+.mesh-grey {
+  background: url(img/mesh-grey.png);
 }
 .mesh-blue {
   background: url(img/mesh-blue.png);
@@ -129,7 +132,9 @@ header {
 main {
   margin: 15px 0px;
 }
-
+.thumbnail, .thumbnail:hover, .thumbnail:focus, .thumbnail:active {
+  border: none;
+}
 #jumbo {
   margin-bottom: 20px;
 }
@@ -385,10 +390,52 @@ img.bookcover {
 #libros #bg-wrapper p {
   font-size: 1em;
 }
-#bg-colecciones {
+
+.bg-colecciones {
+  background-color: #ffffff;
+  padding: 10px 40px;
+}
+.bg-colecciones section {
   background-color: #ffffff;
   padding: 10px;
 }
+.bg-colecciones #bg-wrapper h3 {
+  text-align: right;
+  margin: 0;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+.bg-colecciones h4 {
+  margin-top: 25px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-left: 25px;
+}
+.bg-colecciones h5 {
+  font-size: 1em;
+  font-weight: bold;
+  padding-left: 25px;
+}
+.bg-colecciones p {
+  font-size: 1em;
+  padding-left: 25px;
+}
+.bg-colecciones .box {
+  margin-top: 80px;
+}
+.bg-colecciones .colecciones-cuad {
+  margin-top: 20px;
+}
+.bg-colecciones .colecciones-plaq {
+  margin-top: 20px;
+  text-align: center;
+  padding: 0;
+}
+.bg-colecciones .colecciones-tool {
+  margin-top: 30px;
+}
+
+
 /*#libros section p > span {
   font-style: italic;
 }*/
@@ -441,6 +488,9 @@ img.bookcover {
     margin-top: 20px;
     margin-right: 15px;
 }
+  .bg-colecciones {
+    text-align: center;
+  }
 }
 
 /********** Extra small devices only **********/
@@ -483,6 +533,16 @@ img.bookcover {
   }
   #bg-wrapper {
     font-size: 1.1em;
+    text-align: center;
+  }
+  #bg-wrapper h4,h5,p {
+    padding-left: 0px;
+  }
+  #bg-wrapper h5 {
+    padding-left: 0px;
+  }
+  #bg-wrapper p {
+    padding-left: 0px;
   }
   #col-2k15 {
     padding: 0px;
@@ -514,17 +574,13 @@ img.bookcover {
     height: unset;
   }
   /* COLECCIONES PLAQUETAS */
-  #plaquetas section a img {
-    margin-bottom: 15px;
+  .bg-colecciones {
+    margin-top: 0px;
+    padding: 0px 14px;
+    text-align: center;
   }
-  #plaquetas section a {
-    float: none !important;
-  }
-  #bg-colecciones {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-  #colecciones {
-    padding: 0px;
+  .bg-colecciones h4,.bg-colecciones h5,.bg-colecciones p {
+    padding-left: 0px;
+
   }
 }
