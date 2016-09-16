@@ -171,7 +171,7 @@ main {
 #front { /* THUMBNAIL IMG */
   position: relative;
   z-index: 1;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 1, 1) 100ms;
 }
 #back { /* THUMBNAIL IMG */
   opacity: 0;
@@ -180,7 +180,7 @@ main {
   left: 0;
   right: 0;
   z-index: 0;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 1, 1) 100ms;
 }
 #bg-wrapper section a:hover > #front{
     opacity: 0;
@@ -194,27 +194,26 @@ main {
 #bg-wrapper > h3 {
   margin: 5px 0px;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.2em;
   padding: 10px 20px;
+  padding-left: 35px;
 }
 #bg-wrapper section {
   margin-bottom: 15px;
   padding: 5px;
 }
 #bg-wrapper h4 {
-  font-size: 1.05em;
+  font-size: 18px;
   font-weight: bold;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 #bg-wrapper h5 {
-  font-size: 1em;
-  padding-left: 20px;
+  font-size: 1.05em;
+  padding-left: 25px;
 }
 #bg-wrapper p {
-  font-size: 1em;
-  padding-left: 20px;
+  padding-left: 25px;
 }
-
 /********* COLUMNAS *********/
 #col-2k16 {
   padding: 0px;
@@ -227,11 +226,19 @@ main {
 #aside {
   padding: 0px 15px;
 }
+#aside #bg-wrapper {
+  padding: 15px;
+}
 #aside #titulos h3 {
-  margin: 10px;
+  margin: 0px 10px;
   padding-left: 25px;
 }
-#aside #titulos p {
+#aside #titulos h5 {
+  padding-left: 20px;
+}
+#aside #titulos a {
+  display: block;
+  padding-left: 20px;
   margin-bottom: 5px;
 }
 #aside #titulos h5 {
@@ -292,8 +299,10 @@ footer.panel-footer {
   margin-left: 15px;
 }
 #ending span {
-  font-size: 0.8em;
   display: none;
+}
+#ending p {
+  font-size: 0.9em;
 }
 #ending a {
   color: #333333;
@@ -316,7 +325,6 @@ footer.panel-footer {
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-
 #about .indent {
   text-indent: 30px;
 }
@@ -344,16 +352,15 @@ footer.panel-footer {
 }
 #librerias h2 {
   font-size: 1.4em;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-bottom: 35px;
 }
 #librerias h3 { /* LOCALIDADES LIBRERIAS */
-  font-size: 1.2em;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-bottom: 10px;
 }
 #about ul {
-  padding-left: 20px;
+  padding-left: 30px;
   list-style: none;
 }
 #about ul li {
@@ -361,22 +368,25 @@ footer.panel-footer {
   margin: 10px 0px;
   font-size: 0.9em;
 }
-.box.mesh-grape {
-  margin-bottom: 0px;
-  height: 620px;
+#librerias a {
+  text-decoration: none;
 }
-.box.mesh-grape #bg-wrapper { /*LIBRERIAS*/
+#librerias a:hover {
+  text-decoration: underline;
+}
+.box .mesh-grape {
+  margin-bottom: 0px;
   height: 600px;
 }
+.box.mesh-grape #bg-wrapper { /*LIBRERIAS*/
+  height: 580px;
+}
 .box.mesh-brown { /* FRADI */
-  height: 1025px;
+  height: 1120px;
 }
 .box.mesh-brown #bg-wrapper { /*FRADI*/
-  height: 1005px;
+  height: 1100px;
 }
-
-
-
 
 /* LIBROS */
 #libros h4 {
@@ -387,19 +397,31 @@ img.bookcover {
   margin-left: auto;
   margin-right: auto;
 }
-#libros #bg-wrapper p {
-  font-size: 1em;
+#libros #bg-wrapper {
+  padding: 10px 20px;
 }
-
+#libros #bg-wrapper p {
+  padding: 10px 20px;
+}
+#libros #bg-wrapper h4:first-of-type {
+  padding-left: 0px;
+  text-align: center;
+  font-size: 1.2em;
+}
+#libros #bg-wrapper h5 {
+  padding-left: 0px;
+  text-align: center;
+}
+#libros #bg-wrapper p:first-of-type {
+  text-align: center;
+}
 .bg-colecciones {
-  background-color: #ffffff;
   padding: 10px 40px;
 }
 .bg-colecciones section {
-  background-color: #ffffff;
   padding: 10px;
 }
-.bg-colecciones #bg-wrapper h3 {
+.bg-colecciones h3 {
   text-align: right;
   margin: 0;
   font-weight: bold;
@@ -421,20 +443,26 @@ img.bookcover {
   padding-left: 25px;
 }
 .bg-colecciones .box {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .bg-colecciones .colecciones-cuad {
   margin-top: 20px;
+}
+.bg-colecciones .colecciones-tool {
+  margin-top: 30px;
 }
 .bg-colecciones .colecciones-plaq {
   margin-top: 20px;
   text-align: center;
   padding: 0;
 }
-.bg-colecciones .colecciones-tool {
-  margin-top: 30px;
+.bg-colecciones .colecciones-plaq h5, .bg-colecciones .colecciones-plaq h4, .bg-colecciones .colecciones-plaq p {
+  padding-left: 0px;
 }
-
+.bg-colecciones .box:last-child h3 {
+  text-align: left;
+  padding-left: 15px !important;
+}
 
 /*#libros section p > span {
   font-style: italic;
@@ -449,28 +477,60 @@ img.bookcover {
   #logo {
     margin-left: 35px;
   }
-  #plaquetas section {
-  margin-left: 20px;
-  }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
+  #header-nav {
+    margin-bottom: 40px;
+  }
   #nav-list::after {
     width: 495px;
   }
   #carroza {
     height: 337px;
   }
-
-  #plaquetas section a img {
-    height: 150px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-  }
   #workin {
     float: right;
   }
+  #col-2k16 h3 {
+    padding-left: 35px;
+  }
+  #col-2k15 h3 {
+    padding-left: 35px;
+  }
+  #col-2k17 h3 {
+    padding-left: 18px;
+  }
+  #aside #bg-wrapper {
+    padding: 15px 0px;
+  }
+  #aside #titulos h3 {
+    margin: 0px 10px;
+    padding-left: 15px;
+  }
+  #aside #titulos a {
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+  #aside #titulos h5 {
+    padding-left: 10px;
+    margin-bottom: 5px;
+  }
+  #plaquetas-tit {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .bg-colecciones #bg-wrapper h3 {
+    padding-right: 35px;
+  }
+  /* #plaquetas section a img {
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  } */
+
 }
 
 /********** Small devices only **********/
@@ -479,18 +539,73 @@ img.bookcover {
     margin-bottom: 20px;
   }
   #nav-list {
-    margin-top: 20px;
+    margin-top: -15px;
+    margin-right: 15px;
   }
   #nav-list::after {
     width: 495px;
   }
-  #nav-list {
-    margin-top: 20px;
-    margin-right: 15px;
-}
+  #col-2k16 {
+    text-align: center;
+  }
+  #col-2k15 {
+    text-align: center;
+  }
+  #col-2k15 h4 {
+    padding-left: 0px;
+  }
+  #col-2k15 h5 {
+    padding-left: 0px;
+  }
+  #col-2k15 p {
+    padding-left: 0px;
+  }
+  #col-2k16 h4 {
+    padding-left: 0px;
+  }
+  #col-2k16 h5 {
+    padding-left: 0px;
+  }
+  #col-2k16 p {
+    padding-left: 0px;
+  }
+  .container #col-2k16 h3 {
+    padding-left: 0px;
+  }
+  .container #col-2k16 h3 {
+    padding-left: 0px;
+  }
   .bg-colecciones {
     text-align: center;
   }
+  .bg-colecciones .box {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .bg-colecciones h3, .bg-colecciones h4,.bg-colecciones h5,.bg-colecciones p {
+    padding-left: 0px;
+  }
+  .bg-colecciones #bg-wrapper h3 {
+      text-align: center;
+      padding: unset 0px;
+    }
+  #aside #bg-wrapper {
+    padding: 15px 0px;
+  }
+  #aside #titulos h3 {
+    margin: 0px 10px;
+    padding-left: 25px;
+  }
+  #aside #titulos a {
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+  #aside #titulos h5 {
+    padding-left: 20px;
+    margin-bottom: 5px;
+  }
+
 }
 
 /********** Extra small devices only **********/
@@ -531,12 +646,11 @@ img.bookcover {
   #main-col {
     padding: 0px;
   }
-  #bg-wrapper {
-    font-size: 1.1em;
-    text-align: center;
-  }
-  #bg-wrapper h4,h5,p {
+  #bg-wrapper h4:first-of-type {
     padding-left: 0px;
+  }
+  #libros #bg-wrapper h4:last-of-type {
+    padding-left: 20px;
   }
   #bg-wrapper h5 {
     padding-left: 0px;
@@ -545,21 +659,49 @@ img.bookcover {
     padding-left: 0px;
   }
   #col-2k15 {
+    text-align: center;
     padding: 0px;
   }
   #col-2k16 {
+    text-align: center;
     padding: 0px;
   }
   #aside {
     padding: 0px;
+  }
+  #aside #titulos h3 {
+    margin-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #aside #titulos a {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #aside #titulos h5 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   /* FOOTER */
   #ending {
     margin-left: 0px;
   }
   /* LIBRERIAS.HTML */
-  #about ul li {
+  #librerias {
+    font-size: 1.1em;
+  }
+  #about h3 {
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #about ul {
     letter-spacing: normal;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  #about .mesh-grape {
   }
   .box.mesh-grape {
     height: unset;
@@ -578,9 +720,25 @@ img.bookcover {
     margin-top: 0px;
     padding: 0px 14px;
     text-align: center;
+    font-size: 1em;
   }
-  .bg-colecciones h4,.bg-colecciones h5,.bg-colecciones p {
+  .bg-colecciones .box {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .bg-colecciones h3, .bg-colecciones h4,.bg-colecciones h5,.bg-colecciones p {
     padding-left: 0px;
-
+    text-align: center;
+  }
+  .bg-colecciones #bg-wrapper h3 {
+    text-align: center;
+    padding: unset 0px;
+  }
+  #libros #bg-wrapper {
+   padding: 0px 10px;
+   padding-bottom: 5px;
+  }
+  #librerias #libros #bg-wrapper p {
+    font-size: 0.9em;
   }
 }
